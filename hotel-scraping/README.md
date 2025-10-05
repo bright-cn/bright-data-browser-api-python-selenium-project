@@ -1,51 +1,51 @@
-# Bright Data Hotel Search Scraper with Selenium
+# 使用 Selenium 的 Bright Data 酒店搜索抓取器
 
-This project demonstrates how to use Bright Data's Browser API with Selenium to search for hotels on Booking.com. It provides a practical example of web scraping with automated browser control using Selenium.
+本项目演示如何将 Bright Data 的 Browser API 与 Selenium 结合使用，在 Booking.com 上搜索酒店。它提供了一个使用 Selenium 进行自动化浏览器控制的网页抓取实用示例。
 
-<a href="https://codesandbox.io/p/devbox/github/brightdata/bright-data-browser-api-python-selenium-project?file=%2Fbooking_hotel_scraping.py" target="_blank" rel="noopener">Open in CodeSandbox</a>, sign in with GitHub account, then fork the repository to begin making changes.
+<a href="https://codesandbox.io/p/devbox/github/brightdata/bright-data-browser-api-python-selenium-project?file=%2Fbooking_hotel_scraping.py" target="_blank" rel="noopener">在 CodeSandbox 中打开</a>，使用 GitHub 账号登录，然后 fork 该仓库以开始修改。
 
-### Getting Started
+### 开始使用
 
-1. Replace `YOUR_BRIGHT_DATA_BROWSER_API_ENDPOINT` with your actual Bright Data Browser API HTTP endpoint in `booking_hotel_scraping.py`
-2. Run `python booking_hotel_scraping.py` to start scraping
+1. 在 `booking_hotel_scraping.py` 中将 `YOUR_BRIGHT_DATA_BROWSER_API_ENDPOINT` 替换为你实际的 Bright Data 浏览器 API HTTP 端点
+2. 运行 `python booking_hotel_scraping.py` 开始抓取
 
-## 💻 Usage
+## 💻 使用方法
 
-1. Modify search parameters in `booking_hotel_scraping.py`:
+1. 在 `booking_hotel_scraping.py` 中修改搜索参数：
    ```python
-   SEARCH_LOCATION = "New York"  # Change to your desired location
-   CHECK_IN_DAYS_FROM_NOW = 1    # Adjust check-in date
-   CHECK_OUT_DAYS_FROM_NOW = 2   # Adjust check-out date
+   SEARCH_LOCATION = "New York"  # 修改为你想要的地点
+   CHECK_IN_DAYS_FROM_NOW = 1    # 调整入住日期（距离今天的天数）
+   CHECK_OUT_DAYS_FROM_NOW = 2   # 调整退房日期（距离今天的天数）
    ```
 
-2. Run the script:
+2. 运行脚本：
    ```bash
    python booking_hotel_scraping.py
    ```
 
-## 📊 Example Output
+## 📊 示例输出
 
 ```
-📊 Search Results:
+📊 搜索结果:
 ==================
 
 #1
-Hotel Name: Hotel Name 1
-Price: $100
-Rating: 8.5
+酒店名称: Hotel Name 1
+价格: $100
+评分: 8.5
 --------------------------------------------------
 
 #2
-Hotel Name: Hotel Name 2
-Price: $150
-Rating: 9.0
+酒店名称: Hotel Name 2
+价格: $150
+评分: 9.0
 --------------------------------------------------
 
 #3
-Hotel Name: Hotel Name 3
-Price: $200
-Rating: 8.8
+酒店名称: Hotel Name 3
+价格: $200
+评分: 8.8
 --------------------------------------------------
 
-✅ Found 3 hotels
+✅ 共找到 3 家酒店
 ```
